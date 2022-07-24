@@ -1,0 +1,22 @@
+<html>
+<head>
+
+<script type="text/javascript"></script>
+<script src="https://raw.githubusercontent.com/gitpowerof10/S-archiving/main/js/jquery-3.6.0.min.js"></script>
+
+<script>
+$("button").click(function(){
+	$.post("https://raw.githubusercontent.com/gitpowerof10/S-archiving/main/manifest.json",
+	function(data, status){
+		alert("Data: " + data +
+		"\nStatus: " +status);
+	
+	});
+});
+</script>
+</head>
+<body>
+	<button>sent http post request</button>
+
+</body>
+</html>
