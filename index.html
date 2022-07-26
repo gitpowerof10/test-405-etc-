@@ -1,0 +1,30 @@
+<!-- Keepvid test Get to Post, json file mutating DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test cart list post and no-console log</title>
+</head>
+<body>
+	<div class="main">
+        <div>
+            <label>Email</label>
+            <input name="email" placeholder="Email" id="email" type="email" />
+			<ul id="cartItemsList">
+			</ul>
+        </div>
+
+	</div>
+	<button onclick="readData()">Read Data</button>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="/index.js"></script>
+
+</html>
